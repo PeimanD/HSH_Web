@@ -1,6 +1,6 @@
 # HSH Website development
 
-![Screenshot](//HSH_FrontEnd/src/img/logo.png)
+![Screenshot](logo.png)
 
 Project cordinator is Peiman Dadkhah can be contacted at (778)-708-6781
 
