@@ -7,7 +7,9 @@ const router = express.Router();
 
 router.get("/me", auth, async (req, res) => {
   //retrun user without password
+  console.log("kicked\n");
   const user = await User.findById(req.user._id).select("-password");
+  console.log(user);
   res.send(user);
 });
 

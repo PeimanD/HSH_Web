@@ -1,5 +1,6 @@
 const Joi = require('joi');
-const mongoose = require('mongoose');
+//const mongoose = require('mongoose');
+const {model, Schema} = require('mongoose');
 
 const daySchedule = new Schema({
   array: [],
@@ -29,9 +30,9 @@ const weekSchedule = new Schema({
     }
 });
 
-const thermostat = mongoose.model('thermostat', new mongoose.Schema({
+const thermostat = model('thermostat', new Schema({
   userId:{
-    type: ObjectId,
+    type: Schema.ObjectId,
     required: true
   },
   thermostatId:{
@@ -59,7 +60,7 @@ const thermostat = mongoose.model('thermostat', new mongoose.Schema({
   setTemp:{
     type: Number,
     required: true
-  }
+  },
   schedule:{
     type: weekSchedule
   }
