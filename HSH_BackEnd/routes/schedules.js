@@ -1,6 +1,6 @@
-const { Schedule, validate } = require("../models/schedule");
+//const { Schedule, validate } = require("../models/schedule");
 const auth = require("../middleware/auth");
-const validateObjectId = require("../middleware/validateObjectId");
+//const validateObjectId = require("../middleware/validateObjectId");
 const moment = require("moment");
 const mongoose = require("mongoose");
 const express = require("express");
@@ -18,7 +18,7 @@ router.post("/", [auth], async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
-  const schedule = new schedule({
+//  const schedule = new schedule({
     //add schedule new
     // title: req.body.title,
     // genre: {
@@ -28,10 +28,11 @@ router.post("/", [auth], async (req, res) => {
     // numberInStock: req.body.numberInStock,
     // dailyRentalRate: req.body.dailyRentalRate,
     // publishDate: moment().toJSON()
-  });
-  await schedule.save();
+//  });
+//  await schedule.save();
 
-  res.send(schedule);
+//  res.send(schedule);
+  res.send("hello");
 });
 
 //edit a schedule

@@ -7,6 +7,8 @@ import UserNavBar from './UserNavBar.jsx';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
 import { get } from "https";
 
+import Graph from './Graph'
+
 
 
 class UserPage extends Component {
@@ -22,7 +24,7 @@ class UserPage extends Component {
 
       this.setState({user: data.user});
    };
-   [{_id: 1, name: "tes"},{_id: 2, name: "name"},{_id: 3, name: "sdf"}]
+  // [{_id: 1, name: "tes"},{_id: 2, name: "name"},{_id: 3, name: "sdf"}]
 
    render() {
       //const graphData = [{name: 'Page A', uv: 400, pv: 2400, amt: 2400},{name: 'Page b', uv: 100, pv: 400, amt: 2400}];
