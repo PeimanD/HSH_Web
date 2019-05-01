@@ -7,8 +7,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var scheduleRouter = require('./routes/schedules');
 var thermostatRouter = require('./routes/thermostats');
-var logRouter = require('./routes/log');
-var authRouther = require('./routes/auth');
+//var logRouter = require('./routes/log');
+var authRouter = require('./routes/auth');
 
 var app = express();
 
@@ -25,7 +25,7 @@ app.use('/api/users', usersRouter);
 app.use('/api/auth', authRouter);
 app.use('/api/schedule', scheduleRouter);
 app.use('/api/thermostat', thermostatRouter);
-app.use('/api/log', logRouter);
+//app.use('/api/log', logRouter);
 
 
 module.exports = app;

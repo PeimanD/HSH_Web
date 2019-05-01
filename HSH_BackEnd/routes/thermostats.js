@@ -1,6 +1,6 @@
 const { Thermostat, validate } = require("../models/thermostat");
 const auth = require("../middleware/auth");
-const validateObjectId = require("../middleware/validateObjectId");
+//const validateObjectId = require("../middleware/validateObjectId");
 const moment = require("moment");
 const mongoose = require("mongoose");
 const express = require("express");
